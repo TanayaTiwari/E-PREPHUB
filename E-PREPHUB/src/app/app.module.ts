@@ -7,6 +7,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CoachingPortalComponent } from './coachingcomponent/coaching-portal/coaching-portal.component';
 import { RegistrationComponent } from './navbarcomponents/registration/registration.component';
 import { StudentPortalComponent } from './navbarcomponents/student-portal/student-portal.component';
+import { StudentComponent } from './student/student.component';
+import { StudentHomeComponent } from './student/student-home/student-home.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { StudentPortalComponent } from './navbarcomponents/student-portal/studen
     NavbarComponent,
     CoachingPortalComponent,
     RegistrationComponent,
-    StudentPortalComponent
+    StudentPortalComponent,
+    StudentComponent,
+    StudentHomeComponent
   ],
   imports: [
     BrowserModule,
