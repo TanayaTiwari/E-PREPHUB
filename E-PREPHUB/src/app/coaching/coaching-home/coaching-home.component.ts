@@ -3,12 +3,12 @@ import { MatSidenav } from '@angular/material/sidenav';
 import {BreakpointObserver} from '@angular/cdk/layout';
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  templateUrl: './coaching-home.component.html',
+  styleUrls: ['./coaching-home.component.scss']
 })
-export class AppComponent {
-  title = 'E-PREPHUB';
-  @ViewChild(MatSidenav) sidenav! : MatSidenav;
+export class CoachingHomeComponent {
+  title = 'demo';
+ @ViewChild(MatSidenav) sidenav! : MatSidenav;
 
  constructor(private observer: BreakpointObserver){
 
@@ -23,5 +23,10 @@ export class AppComponent {
        this.sidenav.open();
      }
    });
-  }
+ }
+public onCreated(args: any) {
+     
 }
+}
+
+
