@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "coachingName": "kdCampus",
+      "adminName": "Nitin Rawat",
+      "managerName": "Tanaya Tiwari",
+      "email": "kdcampus@gmail.com",
+      "phoneNumber": 9123451235,
+      "address": "BharwarKuaw Indore",
+      "password": "1234512345",
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
