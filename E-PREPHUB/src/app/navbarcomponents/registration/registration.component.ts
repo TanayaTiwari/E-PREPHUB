@@ -1,31 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
-import { FormGroup, Validators, FormBuilder } from '@angular/forms';
-=======
+
+
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ApiService } from 'src/app/services/api.service';
 
->>>>>>> 9734818ef0f30b419e567c7fc5ceddf0f3435d25
 @Component({
   selector: 'app-registration',
   templateUrl: './registration.component.html',
   styleUrls: ['./registration.component.scss'],
 })
 export class RegistrationComponent implements OnInit {
-<<<<<<< HEAD
-  registrationForm!: FormGroup;
-  constructor(fb: FormBuilder) { 
-    this.registrationForm=fb.group({
-      name:["",Validators.required]
-    });
-  }
 
-  ngOnInit(): void {
-   
-  }
-
- 
-=======
   coachingReg!: FormGroup;
   constructor(private formBuilder: FormBuilder, private api: ApiService) {}
 
@@ -54,5 +39,5 @@ export class RegistrationComponent implements OnInit {
       });
     }
   }
->>>>>>> 9734818ef0f30b419e567c7fc5ceddf0f3435d25
+
 }
