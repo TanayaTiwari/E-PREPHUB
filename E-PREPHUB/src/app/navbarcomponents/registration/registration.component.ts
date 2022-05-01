@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
-
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ApiService } from 'src/app/services/api.service';
 
@@ -19,8 +17,8 @@ export class RegistrationComponent implements OnInit {
       coachingName: ['', Validators.required],
       adminName: ['', Validators.required],
       managerName: ['', Validators.required],
-      email: ['', Validators.required, Validators.email],
-      phoneNumber: ['', Validators.required, Validators.maxLength(10)],
+      email: ['', Validators.required ],
+      phoneNumber: ['', Validators.required ],
       address: ['', Validators.required],
       password: ['', Validators.required],
     });
@@ -30,11 +28,11 @@ export class RegistrationComponent implements OnInit {
     if (this.coachingReg.valid) {
       this.api.addCoaching(this.coachingReg.value).subscribe({
         next: (res) => {
-          alert('User added!');
+          alert('Coaching added!');
           this.coachingReg.reset();
         },
         error: () => {
-          alert('Error while adding user');
+          alert('Error while adding coaching');
         },
       });
     }

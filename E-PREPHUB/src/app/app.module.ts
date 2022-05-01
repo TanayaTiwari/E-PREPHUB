@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,13 +16,8 @@ import { MatDividerModule } from '@angular/material/divider';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoachingComponent } from './coaching/coaching.component';
 import { CoachingHomeComponent } from './coaching/coaching-home/coaching-home.component';
-<<<<<<< HEAD
-import { StdRegistrationComponent } from './coaching/coaching-home/std-registration/std-registration.component';
-import { FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { BatchInfoComponent } from './coaching/coaching-home/batch-info/batch-info.component';
-=======
 import { HttpClientModule } from '@angular/common/http';
->>>>>>> 9734818ef0f30b419e567c7fc5ceddf0f3435d25
+
 
 @NgModule({
   declarations: [
@@ -34,17 +29,10 @@ import { HttpClientModule } from '@angular/common/http';
     StudentHomeComponent,
     CoachingHomeComponent,
     CoachingComponent,
-<<<<<<< HEAD
-    StdRegistrationComponent,
-    BatchInfoComponent
-    ],
-=======
   ],
 
->>>>>>> 9734818ef0f30b419e567c7fc5ceddf0f3435d25
   imports: [
     BrowserModule,
-    FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
@@ -52,12 +40,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatSidenavModule,
     MatToolbarModule,
-<<<<<<< HEAD
-    ReactiveFormsModule
-=======
     ReactiveFormsModule,
     HttpClientModule,
->>>>>>> 9734818ef0f30b419e567c7fc5ceddf0f3435d25
+    FormsModule,
   ],
 
   providers: [],
