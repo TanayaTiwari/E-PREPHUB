@@ -15,6 +15,10 @@ import { MatDividerModule} from '@angular/material/divider';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { CoachingComponent } from './coaching/coaching.component';
 import { CoachingHomeComponent } from './coaching/coaching-home/coaching-home.component';
+import { StdRegistrationComponent } from './coaching/coaching-home/std-registration/std-registration.component';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { BatchInfoComponent } from './coaching/coaching-home/batch-info/batch-info.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,17 +28,21 @@ import { CoachingHomeComponent } from './coaching/coaching-home/coaching-home.co
     StudentComponent,
     StudentHomeComponent,
     CoachingHomeComponent,
-    CoachingComponent
+    CoachingComponent,
+    StdRegistrationComponent,
+    BatchInfoComponent
     ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
     MatDividerModule,
     MatIconModule,
     MatSidenavModule,
-    MatToolbarModule
+    MatToolbarModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
