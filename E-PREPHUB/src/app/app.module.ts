@@ -19,6 +19,7 @@ import { CoachingHomeComponent } from './coaching/coaching-home/coaching-home.co
 import { HttpClientModule } from '@angular/common/http';
 import { StdRegistrationComponent } from './coaching/coaching-home/std-registration/std-registration.component';
 import { BatchInfoComponent } from './coaching/coaching-home/batch-info/batch-info.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +46,7 @@ import { BatchInfoComponent } from './coaching/coaching-home/batch-info/batch-in
     ReactiveFormsModule,
     HttpClientModule,
     FormsModule,
+   
   ],
 
   providers: [],

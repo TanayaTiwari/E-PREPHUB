@@ -28,17 +28,19 @@
             </button>
             <mat-divider></mat-divider>
             <button mat-button class="menu-button" 
+            (click)="goToBatchInfo('../batch-info/')">
+              <mat-icon>update</mat-icon>
+              <span>Batch_Info</span>
+          </button>
+          <mat-divider></mat-divider>
+
+            <button mat-button class="menu-button" 
             (click)="goToStdReg('../std-registration/')">
               <mat-icon>person</mat-icon>
               <span>Std_Registration</span>
           </button>
           <mat-divider></mat-divider>
-          <button mat-button class="menu-button" 
-          (click)="goToBatchInfo('../batch-info/')">
-            <mat-icon>update</mat-icon>
-            <span>Batch_Info</span>
-        </button>
-        <mat-divider></mat-divider>
+         
             <button mat-button class="menu-button">
                 <mat-icon>draw</mat-icon>
                 <span>Test</span>
@@ -61,12 +63,13 @@
     
             <mat-divider></mat-divider>
     
-            <button mat-button class="menu-button">
+            <button mat-button class="menu-button" >
                 <mat-icon>help</mat-icon>
                 <span>Help</span>
             </button>
             <mat-divider></mat-divider>
-            <button mat-button class="menu-button">
+            <button mat-button class="menu-button" 
+            (click)="goToHome('../registration/')">
               <mat-icon>logout</mat-icon>
               <span>Logout</span>
           </button>

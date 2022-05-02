@@ -35,6 +35,10 @@ goToStdReg(pageName: string):void{
  goToBatchInfo(pageName: string):void{
   this.router.navigate([`${pageName}`]);
  }
+ goToHome(pageName: string):void{
+  this.router.navigate([`${pageName}`]);
+ 
+ }
 }
 
 
