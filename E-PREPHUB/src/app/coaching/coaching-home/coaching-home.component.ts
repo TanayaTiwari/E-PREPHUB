@@ -37,7 +37,9 @@ goToStdReg(pageName: string):void{
  }
  goToHome(pageName: string):void{
   this.router.navigate([`${pageName}`]);
- 
+ }
+ goToAbout(pageName: string):void{
+  this.router.navigate([`${pageName}`]);
  }
 }
 
