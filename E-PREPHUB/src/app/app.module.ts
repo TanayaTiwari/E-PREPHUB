@@ -18,7 +18,7 @@ import { CoachingComponent } from './coaching/coaching.component';
 import { CoachingHomeComponent } from './coaching/coaching-home/coaching-home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { StdRegistrationComponent } from './coaching/coaching-home/std-registration/std-registration.component';
-
+import { BatchInfoComponent } from './coaching/coaching-home/batch-info/batch-info.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +29,8 @@ import { StdRegistrationComponent } from './coaching/coaching-home/std-registrat
     StudentHomeComponent,
     CoachingHomeComponent,
     CoachingComponent,
-    StdRegistrationComponent
+    StdRegistrationComponent,
+    BatchInfoComponent,
   ],
 
   imports: [

@@ -11,5 +11,7 @@ export class BatchInfoComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  batchReg(){
+    alert('Batch Info entered successfully!!');
+  }
 }

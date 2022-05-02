@@ -31,6 +31,10 @@ public onCreated(args: any) {
 goToStdReg(pageName: string):void{
   this.router.navigate([`${pageName}`]);
  }
+
+ goToBatchInfo(pageName: string):void{
+  this.router.navigate([`${pageName}`]);
+ }
 }
 
 

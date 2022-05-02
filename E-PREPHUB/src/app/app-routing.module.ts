@@ -7,14 +7,15 @@ import { StudentHomeComponent } from './student/student-home/student-home.compon
 import { StudentComponent } from './student/student.component';
 import { CoachingHomeComponent } from './coaching/coaching-home/coaching-home.component';
 import { StdRegistrationComponent } from './coaching/coaching-home/std-registration/std-registration.component';
-
+import { BatchInfoComponent } from './coaching/coaching-home/batch-info/batch-info.component';
 const routes: Routes = [
   {path:'registration', component: RegistrationComponent},
   {path:'student', component: StudentComponent},
   {path:'coaching', component: CoachingComponent},
   {path:'student-home', component: StudentHomeComponent},
   {path:'coaching-home', component:CoachingHomeComponent},
-  {path:'std-registration', component:StdRegistrationComponent}
+  {path:'std-registration', component:StdRegistrationComponent},
+  {path:'batch-info', component:BatchInfoComponent}
 ];
 
 @NgModule({
