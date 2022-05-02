@@ -17,7 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoachingComponent } from './coaching/coaching.component';
 import { CoachingHomeComponent } from './coaching/coaching-home/coaching-home.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { StdRegistrationComponent } from './coaching/coaching-home/std-registration/std-registration.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     StudentHomeComponent,
     CoachingHomeComponent,
     CoachingComponent,
+    StdRegistrationComponent
   ],
 
   imports: [

@@ -1,5 +1,5 @@
 <form>
-    <h1>Register</h1>
+    <h1>Registration Form For Students!</h1>
     <fieldset>
         <h2>Personal Detail</h2>
         <label for="name">Name <sup>*</sup></label>
@@ -11,6 +11,7 @@
             <option>America</option>
             <option>British</option>
             <option>Canadian</option>
+            <option>Indian</option>
         </select>
     </fieldset>
     <fieldset>
@@ -19,7 +20,8 @@
         <input id="email" name="email" />
         <label for="Mobile">Mobile Number</label>
         <input id="Mobile" name="Mobile" />
-        <span>Contact Preference</span>
+        <span></span>
+        <button (click)="successReg()">Submit</button>
     </fieldset>
-    <button>Submit</button>
+    <!-- <button>Submit</button> -->
 </form>

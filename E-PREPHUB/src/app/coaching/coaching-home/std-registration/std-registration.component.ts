@@ -11,5 +11,7 @@ export class StdRegistrationComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  successReg(){
+    alert('Registration Done');
+  }
 }

@@ -6,12 +6,15 @@ import { RegistrationComponent } from './navbarcomponents/registration/registrat
 import { StudentHomeComponent } from './student/student-home/student-home.component';
 import { StudentComponent } from './student/student.component';
 import { CoachingHomeComponent } from './coaching/coaching-home/coaching-home.component';
+import { StdRegistrationComponent } from './coaching/coaching-home/std-registration/std-registration.component';
+
 const routes: Routes = [
   {path:'registration', component: RegistrationComponent},
   {path:'student', component: StudentComponent},
   {path:'coaching', component: CoachingComponent},
   {path:'student-home', component: StudentHomeComponent},
-  {path:'coaching-home', component:CoachingHomeComponent}
+  {path:'coaching-home', component:CoachingHomeComponent},
+  {path:'std-registration', component:StdRegistrationComponent}
 ];
 
 @NgModule({

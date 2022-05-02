@@ -9,13 +9,83 @@
       "address": "indore",
       "password": "2348948",
       "id": 1
+    },
+    {
+      "coachingName": "kautilya",
+      "adminName": "nitin",
+      "managerName": "mayank",
+      "email": "kautilya@gmail.com",
+      "phoneNumber": 1234567890,
+      "address": "indore",
+      "password": "073124567",
+      "id": 2
+    },
+    {
+      "studentId": "tanu@gmail.com",
+      "password": "32456789",
+      "id": 3
+    },
+    {
+      "coachingName": "kautilya",
+      "adminName": "nitin",
+      "managerName": "mayank",
+      "email": "kautilya@gmail.com",
+      "phoneNumber": "1234512345",
+      "address": "indore",
+      "password": "12345678",
+      "id": 4
+    },
+    {
+      "loginID": "kautilya@gmail.com",
+      "password": "12345678",
+      "id": 5
+    },
+    {
+      "loginID": "kautilya@gmail.com",
+      "password": "12345678",
+      "id": 6
+    },
+    {
+      "studentId": "tanu@123",
+      "password": "31245678",
+      "id": 7
+    },
+    {
+      "loginID": "kautilya@gmail.com",
+      "password": "2345678",
+      "id": 8
+    },
+    {
+      "loginID": "kautilya@gmail.com",
+      "password": "1234567",
+      "id": 9
+    },
+    {
+      "loginID": "rttrry@gmail.com",
+      "password": "1234567",
+      "id": 10
     }
   ],
   "comments": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "studentId": "tanu123",
+      "password": "1234556",
+      "id": 1
+    },
+    {
+      "loginID": "tanu@gmail.com",
+      "password": "12345678",
+      "id": 2
+    },
+    {
+      "loginID": "tanu@gmail.com",
+      "password": "12345678",
+      "id": 3
+    },
+    {
+      "loginID": "ttttttttt@gmail.com",
+      "password": "9887005",
+      "id": 4
     }
   ],
   "profile": {

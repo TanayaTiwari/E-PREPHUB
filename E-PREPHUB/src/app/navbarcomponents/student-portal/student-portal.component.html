@@ -1,15 +1,17 @@
 <h3 class="style" >Student Login</h3>
-<form class="style">
+<form class="style" [formGroup]="studentRegistration">
     <div class="form-group">
         <label>Student Id: </label>
-        <input type="text" class="form-control">
+        <input type="email" class="form-control" formControlName="studentId"/>
     </div>
     <div class="form-group">
         <label>Password: </label>
-        <input type="text" class="form-control">
+        <input type="password" class="form-control" formControlName="password"/>
     </div>
     <div class="d-grid gap-2 col-6 mx-auto">
-        <button class="btn btn-dark" type="submit">Submit</button>
-      </div>
-    </form>
+        <button class="btn btn-dark" type="submit" (click)="stdReg()">Submit</button>
+    </div>
+</form>
+
+
 

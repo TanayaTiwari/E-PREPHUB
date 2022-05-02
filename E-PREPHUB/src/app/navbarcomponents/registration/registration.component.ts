@@ -34,8 +34,12 @@ export class RegistrationComponent implements OnInit {
         error: () => {
           alert('Error while adding coaching');
         },
+        
       });
     }
+    
   }
-
+  loginSuccess(){
+    alert('Registered successfully!!');
+  }
 }
