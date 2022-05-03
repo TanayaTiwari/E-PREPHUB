@@ -20,6 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { StdRegistrationComponent } from './coaching/coaching-home/std-registration/std-registration.component';
 import { BatchInfoComponent } from './coaching/coaching-home/batch-info/batch-info.component';
 import { AboutUsComponent } from './coaching/coaching-home/about-us/about-us.component';
+import { HelpComponent } from './coaching/coaching-home/help/help.component';
+import { StudyComponent } from './coaching/coaching-home/study/study.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { AboutUsComponent } from './coaching/coaching-home/about-us/about-us.com
     StdRegistrationComponent,
     BatchInfoComponent,
     AboutUsComponent,
+    HelpComponent,
+    StudyComponent,
   ],
 
   imports: [

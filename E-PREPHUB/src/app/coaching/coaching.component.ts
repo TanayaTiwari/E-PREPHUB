@@ -2,11 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ApiService } from '../services/api.service';
 import { Router } from '@angular/router';
+
+
+
 @Component({
   selector: 'app-coaching',
   templateUrl: './coaching.component.html',
   styleUrls: ['./coaching.component.scss']
 })
+
 export class CoachingComponent implements OnInit {
   coachingLogin !: FormGroup;
   constructor(private formBuilder: FormBuilder,private api: ApiService, private router: Router) { }
@@ -35,6 +39,7 @@ export class CoachingComponent implements OnInit {
    }
    goToCoachingHome(pageName: string):void{
     this.router.navigate([`${pageName}`]);
+    alert('Login successfully!!');
    }
   }
   

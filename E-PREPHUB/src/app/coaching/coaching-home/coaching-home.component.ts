@@ -41,6 +41,12 @@ goToStdReg(pageName: string):void{
  goToAbout(pageName: string):void{
   this.router.navigate([`${pageName}`]);
  }
+ goToHelp(pageName: string):void{
+  this.router.navigate([`${pageName}`]);
+ }
+ goToStudy(pageName: string):void{
+  this.router.navigate([`${pageName}`]);
+ }
 }
 
 

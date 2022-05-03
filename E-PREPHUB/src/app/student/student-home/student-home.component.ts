@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 import {BreakpointObserver} from '@angular/cdk/layout';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-student-home',
   templateUrl: './student-home.component.html',
@@ -9,7 +9,7 @@ import {BreakpointObserver} from '@angular/cdk/layout';
 })
 export class StudentHomeComponent implements OnInit {
   @ViewChild(MatSidenav) sidenav! : MatSidenav;
-  constructor(private observer: BreakpointObserver) { }
+  constructor(private observer: BreakpointObserver,  private router:Router) { }
   ngAfterViewInit(){
     this.observer.observe(['(max-width:800px)']).subscribe((res)=>{
       if(res.matches){
@@ -23,5 +23,7 @@ export class StudentHomeComponent implements OnInit {
   }
   ngOnInit(): void {
   }
-
+  goToPortal(pageName: string):void{
+    this.router.navigate([`${pageName}`]);
+   }
 }

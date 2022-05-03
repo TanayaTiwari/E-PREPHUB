@@ -30,21 +30,34 @@
           <mat-divider></mat-divider>
           <button mat-button class="menu-button">
               <mat-icon>person</mat-icon>
-              <span>Profile</span>
+              <span>Edit Profile</span>
           </button>
           <mat-divider></mat-divider>
           <button mat-button class="menu-button">
-              <mat-icon>info</mat-icon>
-              <span>About</span>
+              <mat-icon>book</mat-icon>
+              <span>Show Test</span>
           </button>
   
           <mat-divider></mat-divider>
-  
+          
           <button mat-button class="menu-button">
+            <mat-icon>note</mat-icon>
+            <span>Documents</span>
+        </button>
+
+        <mat-divider></mat-divider>
+          <!-- <button mat-button class="menu-button">
               <mat-icon>help</mat-icon>
               <span>Help</span>
           </button>
-  
+          <mat-divider></mat-divider> -->
+          <button mat-button class="menu-button"
+          (click)="goToPortal('../student/')">
+            <mat-icon>logout</mat-icon>
+            <span>Logout</span>
+        </button>
+        
+        <mat-divider></mat-divider>
       </mat-sidenav>
 
     <!-- </mat-sidenav> -->
@@ -53,7 +66,6 @@
               Main content here!
              
           </div>
-      </mat-sidenav-content>
-      
-  </mat-sidenav-container>
+      </mat-sidenav-content> 
+    </mat-sidenav-container>
   

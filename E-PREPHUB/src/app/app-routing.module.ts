@@ -8,6 +8,8 @@ import { CoachingHomeComponent } from './coaching/coaching-home/coaching-home.co
 import { StdRegistrationComponent } from './coaching/coaching-home/std-registration/std-registration.component';
 import { BatchInfoComponent } from './coaching/coaching-home/batch-info/batch-info.component';
 import { AboutUsComponent } from './coaching/coaching-home/about-us/about-us.component';
+import { HelpComponent } from './coaching/coaching-home/help/help.component';
+import { StudyComponent } from './coaching/coaching-home/study/study.component';
 
 
 const routes: Routes = [
@@ -18,7 +20,9 @@ const routes: Routes = [
   {path:'coaching-home', component:CoachingHomeComponent},
   {path:'std-registration', component:StdRegistrationComponent},
   {path:'batch-info', component:BatchInfoComponent},
-  {path:'about-us', component:AboutUsComponent}
+  {path:'about-us', component:AboutUsComponent},
+  {path:'help', component:HelpComponent},
+  {path:'study', component:StudyComponent}
 ];
 
 @NgModule({

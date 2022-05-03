@@ -16,13 +16,14 @@ fieldset{
     margin-right: 5%;
     text-align: center;
     &:first-of-type{
+        margin-top: 5%;
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
     }
     &:last-of-type{
         border-radius: 0;
-        border-bottom-left-radius: 3px;
-        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 9px;
+        border-bottom-right-radius: 9px;
         padding-bottom: 2em;
     }
 }
