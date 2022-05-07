@@ -10,6 +10,7 @@ import { BatchInfoComponent } from './coaching/coaching-home/batch-info/batch-in
 import { AboutUsComponent } from './coaching/coaching-home/about-us/about-us.component';
 import { HelpComponent } from './coaching/coaching-home/help/help.component';
 import { StudyComponent } from './coaching/coaching-home/study/study.component';
+import { TestComponent } from './coaching/coaching-home/test/test.component';
 
 
 const routes: Routes = [
@@ -22,7 +23,8 @@ const routes: Routes = [
   {path:'batch-info', component:BatchInfoComponent},
   {path:'about-us', component:AboutUsComponent},
   {path:'help', component:HelpComponent},
-  {path:'study', component:StudyComponent}
+  {path:'study', component:StudyComponent},
+  {path:'test', component:TestComponent}
 ];
 
 @NgModule({

@@ -22,6 +22,8 @@ import { BatchInfoComponent } from './coaching/coaching-home/batch-info/batch-in
 import { AboutUsComponent } from './coaching/coaching-home/about-us/about-us.component';
 import { HelpComponent } from './coaching/coaching-home/help/help.component';
 import { StudyComponent } from './coaching/coaching-home/study/study.component';
+import { TestComponent } from './coaching/coaching-home/test/test.component';
+import { TestScoreComponent } from './coaching/coaching-home/test-score/test-score.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { StudyComponent } from './coaching/coaching-home/study/study.component';
     AboutUsComponent,
     HelpComponent,
     StudyComponent,
+    TestComponent,
+    TestScoreComponent,
   ],
 
   imports: [

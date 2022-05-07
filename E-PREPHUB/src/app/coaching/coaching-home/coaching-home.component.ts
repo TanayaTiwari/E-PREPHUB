@@ -47,6 +47,9 @@ goToStdReg(pageName: string):void{
  goToStudy(pageName: string):void{
   this.router.navigate([`${pageName}`]);
  }
+ goToTest(pageName: string):void{
+  this.router.navigate([`${pageName}`]);
+ }
 }
 
 

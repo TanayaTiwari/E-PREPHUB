@@ -4,7 +4,6 @@ import { ApiService } from '../services/api.service';
 import { Router } from '@angular/router';
 
 
-
 @Component({
   selector: 'app-coaching',
   templateUrl: './coaching.component.html',
@@ -32,14 +31,14 @@ export class CoachingComponent implements OnInit {
         },
         error: () =>{
           alert('Invalid ID or Passwords');
-        },
-        
+        }, 
       });
     }
    }
+   
    goToCoachingHome(pageName: string):void{
     this.router.navigate([`${pageName}`]);
     alert('Login successfully!!');
    }
   }
-  
+ 
