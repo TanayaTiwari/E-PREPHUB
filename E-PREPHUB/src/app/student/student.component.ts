@@ -18,6 +18,7 @@ export class StudentComponent implements OnInit {
       studentId: ['',Validators.required],
       password: ['', Validators.required],
     });
+    this.checkIsLoggedIn();
     
   }
 
@@ -28,6 +29,7 @@ export class StudentComponent implements OnInit {
         next:(res) =>{
           alert('Student Login Successfully');
           this.studentReg.reset();
+          this.goToStdHome("student-home");
         },
         error: () =>{
           alert('Invalid Student ID or Passwords');
@@ -38,5 +40,12 @@ export class StudentComponent implements OnInit {
    }
    goToStdHome(pageName: string):void{
     this.router.navigate([`${pageName}`]);
+
+   }
+   
+   checkIsLoggedIn(){
+    if(this.api.getIsLoggedIn()){
+      this.goToStdHome("student-home")
+    }
    }
 }

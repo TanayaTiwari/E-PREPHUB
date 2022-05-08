@@ -28,21 +28,21 @@
             </button>
             <mat-divider></mat-divider>
             <button mat-button class="menu-button" 
-            (click)="goToBatchInfo('../batch-info/')">
+            (click)="goToAddCourse()">
               <mat-icon>update</mat-icon>
-              <span>Batch_Info</span>
+              <span>Add Course</span>
           </button>
           <mat-divider></mat-divider>
 
             <button mat-button class="menu-button" 
-            (click)="goToStdReg('../std-registration/')">
+            (click)="goToStdReg()">
               <mat-icon>person</mat-icon>
               <span>Std_Registration</span>
           </button>
           <mat-divider></mat-divider>
          
             <button mat-button class="menu-button"
-            (click)="goToTest('../test/')">
+            (click)="goToTest()">
                 <mat-icon>draw</mat-icon>
                 <span>Test</span>
             </button>
@@ -82,11 +82,18 @@
   
       <!-- </mat-sidenav> -->
         <mat-sidenav-content>
-            <div class="content mat-elevation-z8">
-                Main content here!
-               
+            <div class="content mat-elevation-z8" *ngIf="isTest">
+               <app-test></app-test>
             </div>
+            <div class="content mat-elevation-z8" *ngIf="isStdReg">
+              <app-std-registration></app-std-registration>
+           </div>
+           <div class="content mat-elevation-z8" *ngIf="isAddCourse">
+            <app-course-reg></app-course-reg>
+         </div>
+      
         </mat-sidenav-content>
         
     </mat-sidenav-container>
+   
     

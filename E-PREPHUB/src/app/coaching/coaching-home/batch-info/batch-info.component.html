@@ -1,24 +1,16 @@
-<form>
-    
-    <fieldset>
-        <h1>Batch Information</h1>
-        <h2>Batch Detail</h2>
-        <label for="name">Batch Name <sup >*</sup></label>
-        <input id="name" name="name"/>
-        <label for="name">Batch Time <sup>*</sup></label>
-        <input id="time" name="name"/>
-        <label for="name">Batch Date <sup>*</sup></label>
-        <input id="date" name="name"/>
-        <label for="name">Batch Teachers <sup>*</sup></label>
-        <input id="teachers" name="name"/>
-        <label for="name">Alloted For <sup>*</sup></label>
-        <select id="alloted for" name="alloted for">
-            <option>Choose course!</option>
-            <option>MPPSC</option>
-            <option>SSC</option>
-            <option>BANKING</option>
-            <option>IT</option>
-        </select>
-        <button (click)="batchReg()">Submit</button>
-    </fieldset>
+<h3 class="style" >Batch Registration</h3>
+<form class="style" [formGroup]="batchForm">
+    <div class="form-group">
+        <label>Batch Name: </label>
+        <input type="text" class="form-control" formControlName="batchName" />
+    </div>
+    <div class="form-group">
+        <label>Course Name: </label>
+        <input type="text" class="form-control" formControlName="courseName" />
+    </div>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-dark" type="submit" (click)="batchReg()" >Submit</button>
+        <!-- <a href="./coaching-home">submit</a> --> -->
+          <!-- <a [routerLink]="'/coaching-home'">SUBMIT</a>  -->
+      </div>
     </form>

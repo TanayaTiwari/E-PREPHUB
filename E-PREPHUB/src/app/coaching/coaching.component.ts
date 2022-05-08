@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 })
 
 export class CoachingComponent implements OnInit {
-  coachingLogin !: FormGroup;
+  coachingLogin !: FormGroup; 
   constructor(private formBuilder: FormBuilder,private api: ApiService, private router: Router) { }
 
   ngOnInit(): void {
@@ -24,9 +24,18 @@ export class CoachingComponent implements OnInit {
   coachingLog(){
     console.log(this.coachingLogin.value);
     if(this.coachingLogin.valid){
-      this.api.stdLogin(this.coachingLogin.value).subscribe({
+      if(localStorage.getItem('currentUser'))
+      {
+        this.router.navigate([`coaching-home`]);
+        return;
+      }
+      this.api.coachingLog(this.coachingLogin.value).subscribe({
         next:(res) =>{
-          alert('Login Successfully');
+          if(res.success.value)
+          {
+            localStorage.setItem('currentUser', JSON.stringify({ token: res.token, name: name }));
+            this.router.navigate([`coaching-home`]);
+          }
           this.coachingLogin.reset();
         },
         error: () =>{
