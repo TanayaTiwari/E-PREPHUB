@@ -1,28 +1,50 @@
-<form>
-    <h1>Registration Form For Students!</h1>
-    <fieldset>
-        <h2>Personal Detail</h2>
-        <label for="name">Name <sup>*</sup></label>
-        <input id="name" name="name"/>
-        <label for="dob" name="dob"> Date of Birth<sup>*</sup></label>
-        <input id="dob" name="dob" type="date" />
-        <label for="nationality" >Nationality<sup>*</sup></label>
-        <select id="nationality" name="nationality">
-            <option>Indian</option>
-            <option>America</option>
-            <option>British</option>
-            <option>Canadian</option>
-            
-        </select>
-    </fieldset>
-    <fieldset>
-        <h2>Contact Details</h2>
-        <label for="email">Email</label>
-        <input id="email" name="email" />
-        <label for="Mobile">Mobile Number</label>
-        <input id="Mobile" name="Mobile" />
-        <span></span>
-        <button (click)="successReg()">Submit</button>
-    </fieldset>
-    <!-- <button>Submit</button> -->
+<form [formGroup]="stdReg">
+    <h4> Student Registration</h4>
+  <mat-form-field appearance="outline">
+      <mat-label>Student Name</mat-label>
+      <input formControlName="student_name" matInput placeholder="Name">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+      <mat-label>Student Email</mat-label>
+      <input formControlName="student_email" matInput placeholder="Email">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+      <mat-label>Phone Number</mat-label>
+      <input formControlName="student_phone_number" matInput placeholder="Phone">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Student Address</mat-label>
+    <input formControlName="student_address" matInput placeholder="Address">
+</mat-form-field>
+<mat-form-field appearance="outline">
+  <mat-label>Qualification</mat-label>
+  <input formControlName="student_qualification" matInput placeholder="Qualification">
+</mat-form-field>
+
+<mat-form-field appearance="outline">
+  <mat-label>Select Course</mat-label>
+  <mat-select formControlName="student_course">
+    <mat-option value="Select Course" selected>Select Course</mat-option>
+    <mat-option *ngFor="let course of courses" [value]="course.Batch_Course" (onSelectionChange)="getCourses()">
+      {{course.Batch_Course}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+
+<!-- <mat-form-field appearance="outline">
+  <mat-label>Batch Name</mat-label>
+  <input formControlName="student_batch_name" matInput placeholder="Batch Name">
+</mat-form-field> -->
+<mat-form-field appearance="outline">
+  <mat-label>Password</mat-label>
+  <input formControlName="student_password" matInput placeholder="Password">
+</mat-form-field>
+<mat-form-field appearance="outline">
+  <mat-label>Confirm Password</mat-label>
+  <input formControlName="student_confirm_password" matInput placeholder="Confirm Password">
+</mat-form-field>
+
+<button style="margin-left:8px;" mat-raised-button  color="primary" (click)="stdRegistration()"> Add </button>
+
 </form>

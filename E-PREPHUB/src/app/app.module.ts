@@ -24,6 +24,11 @@ import { HelpComponent } from './coaching/coaching-home/help/help.component';
 import { StudyComponent } from './coaching/coaching-home/study/study.component';
 import { TestComponent } from './coaching/coaching-home/test/test.component';
 import { TestScoreComponent } from './coaching/coaching-home/test-score/test-score.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
+import { MatTableModule } from '@angular/material/table';
+import { MatSelectModule } from '@angular/material/select';
+import { CourseRegComponent } from './coaching/coaching-home/course-reg/course-reg.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +47,7 @@ import { TestScoreComponent } from './coaching/coaching-home/test-score/test-sco
     StudyComponent,
     TestComponent,
     TestScoreComponent,
+    CourseRegComponent,
   ],
 
   imports: [
@@ -56,7 +62,11 @@ import { TestScoreComponent } from './coaching/coaching-home/test-score/test-sco
     ReactiveFormsModule,
     HttpClientModule,
     FormsModule,
-   
+    MatInputModule,
+    MatCardModule,
+    MatTableModule,
+    MatSelectModule,
+    MatSelectModule,
   ],
 
   providers: [],
