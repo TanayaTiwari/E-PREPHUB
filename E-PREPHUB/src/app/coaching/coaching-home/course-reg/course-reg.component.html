@@ -1,1 +1,28 @@
-<p>course-reg works!</p>
+<form [formGroup]="courseReg">
+    <h4>Course Registration</h4>
+    <!-- <mat-form-field appearance="fill">
+        <mat-label>Prepration Type</mat-label>
+        <mat-select formControlName="couese_type">
+          <mat-option value="goverment">Goverment</mat-option>
+          <mat-option value="IT">Information technology</mat-option>
+          <mat-option value="banking">Banking</mat-option>
+          <mat-option value="Medical">Medical</mat-option>
+        </mat-select>
+        <mat-hint align="end">Here's the dropdown arrow ^</mat-hint>
+      </mat-form-field> -->
+      <mat-form-field appearance="outline">
+        <mat-label>Prepration Type</mat-label>
+        <mat-select formControlName="couese_type">
+            <mat-option value="goverment">Goverment</mat-option>
+            <mat-option value="IT">Information technology</mat-option>
+            <mat-option value="banking">Banking</mat-option>
+            <mat-option value="Medical">Medical</mat-option>
+          </mat-select>
+      </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Course</mat-label>
+        <input formControlName="course" matInput placeholder="course">
+    </mat-form-field>
+  <button style="margin-left:8px;" mat-raised-button  color="primary" (click)="submitCourse()"> Add </button>
+  
+  </form>

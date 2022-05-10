@@ -33,7 +33,6 @@
               <span>Add Course</span>
           </button>
           <mat-divider></mat-divider>
-
             <button mat-button class="menu-button" 
             (click)="goToStdReg()">
               <mat-icon>person</mat-icon>
@@ -47,19 +46,19 @@
                 <span>Test</span>
             </button>
             <mat-divider></mat-divider>
-            <button mat-button class="menu-button">
-              <mat-icon>score</mat-icon>
+            <button mat-button class="menu-button" (click)="goToTestScore()">
+              <mat-icon>score</mat-icon >
               <span>Test_score</span>
           </button>
           <mat-divider></mat-divider>
           <button mat-button class="menu-button"
-          (click)="goToStudy('../study/')">
+          (click)="goToStudy()">
             <mat-icon>note</mat-icon>
-            <span>Study_material</span>
+            <span>Study Material</span>
         </button>
         <mat-divider></mat-divider>
             <button mat-button class="menu-button" 
-            (click)="goToAbout('../about-us/')">
+            (click)="goToAbout()">
                 <mat-icon>info</mat-icon>
                 <span>About</span>
             </button>
@@ -67,7 +66,7 @@
             <mat-divider></mat-divider>
     
             <button mat-button class="menu-button" 
-            (click)="goToHelp('../help/')">
+            (click)="goToHelp()">
                 <mat-icon>help</mat-icon>
                 <span>Help</span>
             </button>
@@ -91,6 +90,18 @@
            <div class="content mat-elevation-z8" *ngIf="isAddCourse">
             <app-course-reg></app-course-reg>
          </div>
+         <div class="content mat-elevation-z8" *ngIf="isAddTestScore">
+          <app-test-score></app-test-score>
+       </div>
+       <div class="content mat-elevation-z8" *ngIf="isAddStudyMatrial">
+        <app-study></app-study>
+     </div>
+     <div class="content mat-elevation-z8" *ngIf="isAddAbout">
+      <app-about-us></app-about-us>
+   </div>
+    <div class="content mat-elevation-z8" *ngIf="isAddHelp">
+          <app-help></app-help>
+       </div>
       
         </mat-sidenav-content>
         

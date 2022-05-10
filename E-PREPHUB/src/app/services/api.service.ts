@@ -70,6 +70,10 @@ export class ApiService {
     );
   }
 
+  forCourse(data: any) {
+    return this.http.post<any>('http://localhost:8005/PREPHUB/Login', data);
+  }
+
   private getCoachingId() {
     return JSON.parse(localStorage.getItem('currentUser')).username;
   }

@@ -12,7 +12,10 @@ export class CoachingHomeComponent {
   isTest = false;
   isStdReg = false;
   isAddCourse = false;
-
+  isAddTestScore = false;
+  isAddStudyMatrial = false;
+  isAddHelp = false;
+  isAddAbout = false;
   @ViewChild(MatSidenav) sidenav!: MatSidenav;
 
   constructor(private observer: BreakpointObserver, private router: Router) {}
@@ -32,28 +35,67 @@ export class CoachingHomeComponent {
   goToHome(pageName: string): void {
     this.router.navigate([`${pageName}`]);
   }
-  goToAbout(pageName: string): void {
-    this.router.navigate([`${pageName}`]);
+  goToAbout(): void {
+    this.isTest = false;
+    this.isStdReg = false;
+    this.isAddCourse = false;
+    this.isAddTestScore = false;
+    this.isAddStudyMatrial = false;
+    this.isAddHelp = false;
+    this.isAddAbout = true;
   }
-  goToHelp(pageName: string): void {
-    this.router.navigate([`${pageName}`]);
+  goToHelp(): void {
+    this.isTest = false;
+    this.isStdReg = false;
+    this.isAddCourse = false;
+    this.isAddTestScore = false;
+    this.isAddStudyMatrial = false;
+    this.isAddHelp = true;
+    this.isAddAbout = false;
   }
-  goToStudy(pageName: string): void {
-    this.router.navigate([`${pageName}`]);
+  goToStudy(): void {
+    this.isTest = false;
+    this.isStdReg = false;
+    this.isAddCourse = false;
+    this.isAddTestScore = false;
+    this.isAddStudyMatrial = true;
+    this.isAddHelp = false;
+    this.isAddAbout = false;
   }
   goToTest(): void {
     this.isTest = true;
     this.isStdReg = false;
     this.isAddCourse = false;
+    this.isAddTestScore = false;
+    this.isAddStudyMatrial = false;
+    this.isAddHelp = false;
+    this.isAddAbout = false;
   }
-  goToStdReg(): void {
-    this.isStdReg = true;
-    this.isTest = false;
-    this.isAddCourse = false;
-  }
-  goToAddCourse(): void {
-    this.isAddCourse = true;
+  goToTestScore(): void {
     this.isTest = false;
     this.isStdReg = false;
+    this.isAddCourse = false;
+    this.isAddTestScore = true;
+    this.isAddStudyMatrial = false;
+    this.isAddHelp = false;
+    this.isAddAbout = false;
+  }
+  goToStdReg(): void {
+    this.isTest = false;
+    this.isStdReg = true;
+    this.isAddCourse = false;
+    this.isAddTestScore = false;
+    this.isAddStudyMatrial = false;
+    this.isAddHelp = false;
+    this.isAddAbout = false;
+  }
+  goToAddCourse(): void {
+    this.isTest = false;
+    this.isStdReg = false;
+    this.isAddCourse = true;
+    this.isAddTestScore = false;
+    this.isAddStudyMatrial = false;
+    this.isAddHelp = false;
+    this.isAddAbout = false;
   }
 }
